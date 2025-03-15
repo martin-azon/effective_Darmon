@@ -1,0 +1,1183 @@
+Loading file "ex1_pp5.m"
+Loading "Elimination_functions.m"
+Loading "Frey_curves.m"
+Computing newforms of level:
+ [
+    <Principal Prime Ideal of OK
+    Generator:
+        [2, 0], 1>,
+    <Prime Ideal of OK
+    Two element generators:
+        [5, 0]
+        [2, 1], 1>,
+    <Principal Prime Ideal of OK
+    Generator:
+        [3, 0], 2>,
+    <Principal Prime Ideal of OK
+    Generator:
+        [7, 0], 1>
+]
+
+
+Dimension of the space = 680
+It took 1308.480 seconds to compute the space of newforms.
+There are  101 Hecke constituents to eliminate.
+The degrees of the coefficient fields of the Hecke constituents are [ 1, 1, 1, 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4,
+4, 4, 4, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8, 12, 12, 12, 12, 12, 12, 
+12, 12, 14, 14, 14, 14, 20, 20, 20, 20, 22, 22, 22, 22, 24, 24, 24, 24, 26, 26 ]
+
+
+
+
+### We are working to eliminate the 1 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 2 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 3 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 4 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 5 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 6 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 7 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 8 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 9 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 10 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 11 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 12 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 13 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 14 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 15 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 16 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 17 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 18 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 19 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 41 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+After 53.250 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 20 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 21 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 22 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.010 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 23 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 59 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 4.420 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 24 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+The form was not eliminated using prime ideals above 11
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 13 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 38.550 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 25 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 29, 31, 61 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 6.330 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 26 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+The form was not eliminated using prime ideals above 11
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 13 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 48.390 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 27 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 28 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 29 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+The form was not eliminated using prime ideals above 11
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11, 13 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 29
+The form was not eliminated using prime ideals above 29
+After 49.280 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 30 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 31 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 32 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 33 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 34 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 35 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 36 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 41 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was not eliminated using prime ideals above 13
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11, 19, 31, 41 }
+After 20.670 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11, 19, 31, 41 }
+
+
+
+
+### We are working to eliminate the 37 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 38 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+The form was not eliminated using prime ideals above 11
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11, 13 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 29
+The form was not eliminated using prime ideals above 29
+After 72.900 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 39 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 40 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 41 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 89 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 28.970 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 42 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 31, 131 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+The form was not eliminated using prime ideals above 19
+Performing elimination with 1 prime ideal(s) above 23
+The form was eliminated in 89.750 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 43 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 44 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 45 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 46 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 47 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 48 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 89 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 39.880 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 49 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 41 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was not eliminated using prime ideals above 13
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11, 19, 31, 41 }
+After 53.990 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11, 19, 31, 41 }
+
+
+
+
+### We are working to eliminate the 50 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 31, 131 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was not eliminated using prime ideals above 17
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+After 157.630 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 51 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 0.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 52 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 41, 71, 79, 89, 151, 191, 239, 
+359, 401 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 41 }
+After 227.600 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 41 }
+
+
+
+
+### We are working to eliminate the 53 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 41, 71, 79, 151, 191, 239, 359, 
+401 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 41 }
+After 259.150 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 41 }
+
+
+
+
+### We are working to eliminate the 54 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 29, 61, 79, 131, 181, 191, 
+1249 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 61 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 390.360 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 55 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 4.910 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 56 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 4.920 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 57 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 31, 41, 71, 79, 281, 839, 
+14071, 20359 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 41, 71, 79 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 71 }
+After 442.440 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 71 }
+
+
+
+
+### We are working to eliminate the 58 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 71, 109, 139, 151, 181, 199, 1109
+}
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 169.000 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 59 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 31, 41, 71, 79, 281, 839, 
+14071, 20359 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 41, 71, 79 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 71 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 71 }
+After 507.250 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 71 }
+
+
+
+
+### We are working to eliminate the 60 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 8.430 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 61 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 8.440 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 62 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 29, 61, 79, 101, 181, 3701 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 29, 61 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 194.620 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 63 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 31, 41, 79, 151, 191, 271, 
+311, 631, 1151 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 31, 41, 79 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 200.920 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 64 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 31, 41, 79, 151, 191, 271, 
+631, 1151 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 31, 41, 79 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 207.220 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 65 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 9.760 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 66 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 41, 59, 61, 131, 151, 179, 251, 
+719, 1151, 1439, 3499, 23819 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 61 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 214.300 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 67 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 41, 59, 61, 131, 151, 179, 251, 
+719, 1151, 3499, 23819 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 61 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 221.380 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 68 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.980 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 69 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.650 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 70 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.760 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 71 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 11.190 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 72 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.630 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 73 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.660 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 74 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.660 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 75 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 10.640 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 76 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 41, 47, 61, 89, 191, 211, 
+449, 3371, 7001, 8821, 13151, 17989, 58549, 99929, 2540749, 2567029, 
+286713775759 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 19 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 228.350 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 77 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 41, 47, 61, 89, 191, 211, 
+359, 449, 3371, 8821, 13151, 17989, 58549, 99929, 2540749, 2567029, 286713775759
+}
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 19 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 234.810 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 78 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 11.740 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 79 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 11.740 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 80 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 29, 31, 41, 59, 61, 229, 251, 
+331, 619, 2579, 2999, 25321, 31219, 81532997729, 214626710491 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 31, 41 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 31 }
+After 685.010 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 31 }
+
+
+
+
+### We are working to eliminate the 81 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 13.880 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 82 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 29, 31, 41, 59, 61, 229, 251, 
+331, 619, 2579, 2999, 25321, 31219, 81532997729, 214626710491 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 31, 41 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 31 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 31 }
+After 734.030 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 31 }
+
+
+
+
+### We are working to eliminate the 83 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 16.250 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 84 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 71, 179, 349, 449, 971, 
+1109, 1181, 1619, 2161, 2729, 2971, 12539, 15319, 19139, 86939, 90989, 1173551, 
+119327424589, 157108546547089 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 164.890 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 85 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 31, 59, 71, 179, 349, 449, 
+971, 1109, 1619, 2161, 2729, 2971, 12539, 15319, 19139, 86939, 90989, 1173551, 
+119327424589, 157108546547089 }
+Performing elimination with 1 prime ideal(s) above 13
+The form was eliminated in 167.240 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 86 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 13, 19, 29, 41, 59, 61, 311, 419,
+421, 1579, 21529, 43711, 52379, 190709, 287281, 1977119, 4328539, 5504441, 
+144751573451 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 13 }
+After 596.840 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 13 }
+
+
+
+
+### We are working to eliminate the 87 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 13, 19, 29, 41, 59, 61, 311, 421,
+1579, 21529, 43711, 52379, 190709, 287281, 1977119, 4328539, 5504441, 
+144751573451 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 13 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 13 }
+After 619.980 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 13 }
+
+
+
+
+### We are working to eliminate the 88 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 19, 29, 61, 101, 491, 661, 
+1021, 1031, 1319, 3229, 3719, 3889, 4391, 4931, 19249, 29921, 57719, 85829, 
+107791, 203869, 322871, 462041, 617341, 18105961, 132419449, 756872195269, 
+129784668910723231 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11, 29 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 11 }
+After 888.790 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 89 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 23.750 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 90 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 19, 29, 61, 101, 661, 1021, 
+1031, 1319, 3229, 3719, 3889, 4391, 4931, 19249, 29921, 57719, 85829, 107791, 
+203869, 322871, 462041, 617341, 18105961, 27039689, 132419449, 756872195269, 
+129784668910723231 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 11, 29 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 11 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 11 }
+After 942.170 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 11 }
+
+
+
+
+### We are working to eliminate the 91 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 26.800 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 92 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 27.740 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 93 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 27.740 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 94 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 27.750 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 95 th Hecke constituent.###
+The form was eliminated because K is not a subfield of Kg.
+The form was eliminated in 27.740 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 96 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 17, 19, 29, 41, 59, 109, 179, 
+239, 251, 311, 349, 409, 479, 1151, 1291, 1619, 2281, 4801, 4861, 5519, 17681, 
+66809, 88019, 136541, 611839, 783701, 1414321, 18767821, 43634629, 56056921, 
+145133819, 499453709, 1458807709, 21157425371, 186317014411051 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 17 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 7, 17 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 1009.450 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 97 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 17, 19, 29, 41, 59, 109, 179, 
+239, 251, 311, 349, 409, 479, 1151, 1619, 2281, 4801, 4861, 5519, 17681, 66809, 
+88019, 136541, 611839, 783701, 1414321, 18767821, 43634629, 56056921, 145133819,
+499453709, 1458807709, 8200616309, 21157425371, 186317014411051 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 17 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 7, 17 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 1072.620 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 98 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 7, 11, 19, 59, 61, 89, 109, 229, 239,
+1249, 1669, 1801, 2389, 4271, 6301, 7109, 11549, 128761, 521119, 700831, 
+1854731, 2261309, 12794069, 209684351, 218796029, 310227331, 1236087179, 
+57965383451, 294790290409, 7474639104271, 27068266350002863261 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 7, 59 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 7 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 7 }
+After 1133.320 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 7 }
+
+
+
+
+### We are working to eliminate the 99 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 59, 61, 89, 109, 229, 239, 
+1249, 1801, 1861, 2389, 4271, 6301, 7109, 11549, 128761, 521119, 700831, 
+1854731, 2261309, 6812549, 12794069, 209684351, 218796029, 310227331, 
+1236087179, 57965383451, 294790290409, 7474639104271, 27068266350002863261 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 59 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 430.020 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 100 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 29, 101, 191, 241, 331, 521, 
+541, 719, 859, 1229, 1231, 2251, 2309, 3049, 4099, 6481, 40099, 47389, 55171, 
+71881, 620639, 722299, 759019, 1928929, 3268799, 4826309, 26132291, 26465449, 
+131093191, 170781301, 1263811469, 1643216051, 337441800551, 404169029282429 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 521 }
+Performing elimination with 1 prime ideal(s) above 17
+The form was eliminated in 451.090 seconds.
+unelim_ps = {}
+
+
+
+
+### We are working to eliminate the 101 th Hecke constituent.###
+Performing elimination with 2 prime ideal(s) above 11
+We still have to eliminate exponents p = { 11, 19, 29, 31, 41, 101, 191, 241, 
+331, 521, 541, 719, 859, 1229, 1231, 2251, 2309, 4099, 6481, 11701, 47389, 
+55171, 71881, 620639, 722299, 759019, 1928929, 3268799, 4826309, 26132291, 
+26465449, 131093191, 170781301, 1263811469, 1643216051, 337441800551, 
+404169029282429 }
+Performing elimination with 1 prime ideal(s) above 13
+We still have to eliminate exponents p = { 41, 521 }
+Performing elimination with 1 prime ideal(s) above 17
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 2 prime ideal(s) above 19
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 1 prime ideal(s) above 23
+We still have to eliminate exponents p = { 41 }
+Performing elimination with 2 prime ideal(s) above 29
+We still have to eliminate exponents p = { 41 }
+After 1261.560 seconds, the form was not eliminated. We move on to the next one!
+unelim_ps = { 41 }
+
+
+
+We didn't manage to get rid of the following primes: { 7, 11, 13, 19, 31, 41, 71}
