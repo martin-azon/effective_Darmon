@@ -1,13 +1,29 @@
-load "Frey_curves.m";
+////////////////// List of functions/intrinsics //////////////////
 
-function Remove_first_elt(L);
-    // **Description:** Removes the first element of a list.
+/*
+intrinsic RemoveFirstElement: DONE
+function SigmaBetweenPrimes: DONE
+TracesFrobsAtConjugates: DONE 
+
+function N_good: DONE
+function M_toric: DONE
+
+intrinsic Bounding_ps: TO BE TESTED
+intrinsic RefinedBounding_ps: NOT YET DONE
+
+intrinsic Eliminate_g: TO BE TESTED
+*/
+
+
+////////////////////// Some useful functions //////////////////////
+
+intrinsic RemoveFirstElement(L::List) -> List
+{Removes the first element of a list}
 
     return Reverse(Prune(Reverse(L)));
-end function;
+end intrinsic;
 
-
-function sigma_between_primes(Q1, Q2, GalGrp);
+function SigmaBetweenPrimes(Q1, Q2, GalGrp);
     // **Description:** Returns the element sigma of the Galois group that maps the ideal Q1 onto Q2
 
 	for sigma in GalGrp do
@@ -17,6 +33,21 @@ function sigma_between_primes(Q1, Q2, GalGrp);
 	end for;
 end function;
 
+function TracesFrobsAtConjugates(Crv, Q);
+    // **Description:** Computes the set of Traces of Frobenius of the Jacobian of a curve 
+    // at the prime ideals in the base field of the curve that are conjugate to Q.
+    // **Input:**
+    //   - Crv: An hyperelliptic curve defined over a number field.
+    //   - Q: A prime ideal living in the ring of integers of such field.
+
+    PolsBase := PolynomialRing(BaseField(Crv));
+    Lf := EulerFactor(Crv, Q);
+    Lfactors := Factorization(PolsBase ! Reverse(Lf));
+    return Set([-Coefficient(f[1],1) : f in Lfactors]); 
+end function;
+
+
+//////////////////////Computing the quantities Ngood, Mtoric//////////////////////
 
 function N_good(TracesCrv_q, Hecke_eigenvals, Sigma, toKg);
     // **Description:** Computes the quantity N_good, used in the elimination process of Hilbert modular forms.
@@ -31,13 +62,11 @@ function N_good(TracesCrv_q, Hecke_eigenvals, Sigma, toKg);
         factor := Gcd([Integers() ! AbsoluteNorm(toKg(Sigma[i](tr)) - Hecke_eigenvals[i]) : i in [1..#Sigma]]);
         if factor eq 0 then
             return 0;
-            //break;
         end if;
-        prod := prod*factor;
+        prod *:= factor;
     end for;
     return prod;
 end function;
-    
 
 function M_toric(Q, Hecke_eigenvals);
     // **Description:** Computes the quantity M_toric, used in the elimination process.
@@ -49,32 +78,36 @@ function M_toric(Q, Hecke_eigenvals);
 end function;
 
 
-function Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_above_r := 0, infinitely_many_to_eliminate := true, uneliminated_ps := {} , initially_eliminated_ps := {});
-    // **Description:** Attempts to bound the set of possible prime exponents p for which there could be an isomorphism between the Galois representations of the Jacobian of the Frey curve attached to a putative solution of the equation, and the Hilbert newform g.
+
+//////////////////////////Bounding uneliminated primes//////////////////////////
+
+intrinsic Bounding_ps(g::ModFrmHilElt, q::RngIntElt, E::GFE : infinitely_many_to_eliminate := true, uneliminated_ps := {} , initially_eliminated_ps := {2, 3}) -> SetEnum, BoolElt, BoolElt 
+{Attempts to bound the set of possible prime exponents p for which there could be an isomorphism between the Galois representations of the Jacobian of the Frey curve attached to a putative solution of the equation, and the Hilbert newform g.}
     // **Input:**
     //   - g: A Hilbert newform.
     //   - q: A rational prime.
-    //   - signature: A string, either "rrp" or "ppr", indicating the signature of the equation.
-    //   - r: Exponent appearing in the GFE.
-    //   - A, B, C: Coefficients in the GFE.
-    //   - tw_coprime_to_r, val_tw_above_r: We consider the twist of the Frey curve by the quantity tw_coprime_to_r*(w-2)^(val_tw_above_r).
-    //   - infinitely_many_to_eliminate: Booelan stating if there are still infinitely many primes to eliminate. The first time the function is executed, it should be at true.
+    //   - E: A GFE object.
+    //   - infinitely_many_to_eliminate: Booelan stating if there are still infinitely many primes to eliminate. The first time the function is executed, it should be set at true.
     //   - uneliminated_ps: Set of primes that have not been eliminated yet. As soon, as infinitely_many_to_eliminate is set to false, uneliminated_ps should be a non-empty finite set of primes.
     //   - initially_eliminated_ps: Set of primes that might have been already eliminated for theoretical reasons (e.g. equation already solved in the literature).
+    // **Output:**
+    //   - a set corresponding to the ps that have not been eliminated yet.
+    //   - a boolean describing if the form g was eliminated using q.
+    //   - a boolean describing if the prime q helped to bound the set of uneliminated ps.
 
     if not infinitely_many_to_eliminate and (uneliminated_ps eq {}) then
         error "If there are only finitely many ps to eliminate, they should appear in the set uneliminated_ps";
     end if;
 
-    if ((signature eq "rrp") and (2*r*A*B mod q eq 0)) or ((signature eq "ppr") and (2*r*C mod q eq 0)) then
-        error "The Jacobian of the curve must be semistable at primes above q =", q;
-    end if;
-
-
-    K<w> := BaseField(Parent(g));
+    K<w> := E`fieldK;
+    assert BaseField(Parent(g)) eq K;
     OK := Integers(K);
     GalK := Automorphisms(K);
-    PolsK<X> := PolynomialRing(K);
+
+    levelN := LevelNewforms(E); 
+    if AbsoluteNorm(levelN) mod q eq 0 then 
+        error "The prime q must not divide the norm of the level";
+    end if;
 
     is_subfield, toKg := IsSubfield(K, BaseField(g));
     if not is_subfield then 
@@ -83,7 +116,7 @@ function Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_
 
     QQs := SetToSequence(Support(q*OK));
     Q1 := QQs[1];
-    automs_QQs := [sigma_between_primes(Q1, Q, GalK) : Q in QQs];
+    automs_QQs := [SigmaBetweenPrimes(Q1, Q, GalK) : Q in QQs];
 
 
     print "Performing elimination with",#Set(QQs),"prime ideal(s) above", q;
@@ -99,21 +132,17 @@ function Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_
     end if;
     assert Type(remaining_ps_to_eliminate) eq SetEnum;
 
-    twist := tw_coprime_to_r*(w-2)^(val_tw_above_r);
-
-    if signature eq "ppr" then
-        for a, c in [1..q-1] do 
-            if (q notin [2, r]) and (C*A*a*(C*c^r - A*a) mod q ne 0) then 
-                def_pol := PolsK ! pol_ppr(r, A, C, a, c);
-                FreyCrv := QuadraticTwist(HyperellipticCurve(def_pol), twist);
-                TracesCrv_q := TracesFrobs_at_conjugates(FreyCrv, Q1);
+    if E`signature eq "ppr" then
+        for ap, c in [0..q-1] do 
+            if ([ap, c] ne [0, 0]) and (q notin [2, E`r]) and (E`C*E`A*ap*(E`C*c^E`r - E`A*ap) mod q ne 0) then 
+                FreyCrv := FreyCurve(E, ap, 1, c);
+                TracesCrv_q := TracesFrobsAtConjugates(FreyCrv, Q1);
                 N_gd := N_good(TracesCrv_q, Hecke_eigenvals, automs_QQs, toKg);
                 if N_gd eq 0 then
+                    print "The form was not eliminated using prime ideals above", q;
                     if infinitely_many_to_eliminate then
-                        print "The form was not eliminated using prime ideals above", q;
                         return {}, false, false;
                     else 
-                        print "The form was not eliminated using prime ideals above", q;
                         return uneliminated_ps, false, false;
                     end if;
                 else 
@@ -125,12 +154,11 @@ function Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_
                 end if;
             end if;
         end for;
-    elif signature eq "rrp" then
-        for a, b in [1..q-1] do
-            if (q notin [2, r]) and (A*B*(A*a^r + B*b^r) mod q ne 0) then 
-                def_pol := PolsK ! pol_rrp(r, A, B, a, b);
-                FreyCrv := QuadraticTwist(HyperellipticCurve(def_pol), twist);
-                TracesCrv_q := TracesFrobs_at_conjugates(FreyCrv, Q1);
+    elif E`signature eq "rrp" then
+        for a, b in [0..q-1] do
+            if ([a, b] ne [0, 0]) and (q notin [2, E`r]) and (E`A*E`B*(E`A*a^E`r + E`B*b^E`r) mod q ne 0) then 
+                FreyCrv := FreyCurve(E, a, b, 1);
+                TracesCrv_q := TracesFrobsAtConjugates(FreyCrv, Q1);
                 N_gd := N_good(TracesCrv_q, Hecke_eigenvals, automs_QQs, toKg);
                 if N_gd eq 0 then
                     if infinitely_many_to_eliminate then
@@ -164,41 +192,57 @@ function Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_
         print "We still have to eliminate exponents p =", remaining_ps_to_eliminate;
         return remaining_ps_to_eliminate, false, true;
     end if;
-end function;
-    
+end intrinsic;
 
-function Eliminate_g(g, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_above_r := 0, init_eliminated_ps := {2, 3, r}, first_q := 3, forbidden_qs := {2, r}, maximal_duration := 300, max_amount_useless_qs := 3);
-    // **Description:** This function attempts to eliminate the Hilbert newform g by checking if K is contained in its field of coefficients, or by iteratively applying Bounding_ps with different values of q.
+
+//intrinsic RefinedBounding_ps TO BE DONE
+
+
+
+
+
+
+
+/////////////////////Eliminating newforms/////////////////////
+
+
+intrinsic Eliminate_g(g::ModFrmHilElt, E::GFE : first_q := 3, init_eliminated_ps := {2, 3}, maximal_duration := 300, max_amount_useless_qs := 6) -> SetEnum, BoolElt, RngIntElt
+{Attempts to eliminate the Hilbert newform g by checking if K is contained in its field of coefficients, or by iteratively applying Bounding_ps with different values of q.}
     // **Input:**
     //   - g: The Hilbert newform we are attempting to eliminate.
-    //   - signature: A string, either "rrp" or "ppr", indicating the signature of the equation.
-    //   - r: Exponent appearing in the GFE.
-    //   - A, B, C: Coefficients in the GFE.
-    //   - tw_coprime_to_r, val_tw_above_r: We consider the twist of the Frey curve by the quantity tw_coprime_to_r*(w-2)^(val_tw_above_r).
-    //   - initially_eliminated_ps: Set of primes that might have been already eliminated for theoretical reasons (e.g. equation already solved in the literature).
+    //   - E: The GFE we wish to solve.
     //   - first_q: A prime integer. The first rational prime q used to apply Bounding_ps.
-    //   - forbidden_qs: A set of prime integers that are not allowed to be used as q in the elimination process.
-    //   - maximal_duration: An integer. The maximum time (in seconds) the elimination process is allowed to run. 
-    //   - max_amount_useless_qs: An integer. The maximum number of consecutive `q` values that are allowed to be "useless" (not eliminating any new primes) before the process terminates.
-    
+    //   - maximal_duration: An integer. The maximum of seconds the elimination process is allowed to run. 
+    //   - max_amount_useless_qs: An integer. The maximum number of consecutive values of q that are allowed to be "useless" (not eliminating any new primes) before the process terminates.
+    // **Output:**
+    //   - the set of primes such that the pair (p, g) has not been eliminated.
+    //   - a boolean describing if the form was eliminated.
+    //   - the first prime q such that the bounding_ps worked with g and q.
+
+    forbidden_qs := Set(PrimeDivisors(AbsoluteNorm(Level(Parent(g)))));
+
     Coef_field := BaseField(g);
     if Coef_field eq Rationals() then 
         print "The form was eliminated because K is not a subfield of Kg.";
-        return {}, true, 1;
+        return {}, true, 1; //return 1 as first q because the argument uses the (non) inclusion of number fields
     else 
-        is_subfield, toKg := IsSubfield(fieldK(r), Coef_field);
+        is_subfield, toKg := IsSubfield(E`fieldK, Coef_field);
         if not is_subfield then
             print "The form was eliminated because K is not a subfield of Kg.";
             return {}, true, 1;
         else 
             t0 := Realtime();
+            while first_q in forbidden_qs do 
+                first_q := NextPrime(first_q);
+            end while;    
             q := first_q;
-            inf_many_to_eliminate := true;
-            unelim_ps, eliminated_g, bounding_ps_at_q_worked := Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := tw_coprime_to_r, val_tw_above_r := val_tw_above_r, infinitely_many_to_eliminate := inf_many_to_eliminate, uneliminated_ps := {}, initially_eliminated_ps := init_eliminated_ps);
+            unelim_ps, eliminated_g, bounding_ps_at_q_worked := Bounding_ps(g, q, E : infinitely_many_to_eliminate := true, uneliminated_ps := {}, initially_eliminated_ps := init_eliminated_ps);
             number_useless_q := 0;
-            if bounding_ps_at_q_worked and inf_many_to_eliminate then 
+            if bounding_ps_at_q_worked then 
                 first_q_to_work := q;
                 inf_many_to_eliminate := false;
+            else 
+                inf_many_to_eliminate := true;
             end if;
             while not eliminated_g and (Realtime(t0) lt maximal_duration) and (number_useless_q lt max_amount_useless_qs) do
                 if bounding_ps_at_q_worked and inf_many_to_eliminate then 
@@ -208,7 +252,7 @@ function Eliminate_g(g, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_abo
                 previous_unelim_ps := unelim_ps;
                 q := NextPrime(q);
                 if q notin forbidden_qs then 
-                    unelim_ps, eliminated_g, bounding_ps_at_q_worked := Bounding_ps(g, q, signature, r, A, B, C : tw_coprime_to_r := tw_coprime_to_r, val_tw_above_r := val_tw_above_r, infinitely_many_to_eliminate := inf_many_to_eliminate, uneliminated_ps := unelim_ps, initially_eliminated_ps := init_eliminated_ps);
+                    unelim_ps, eliminated_g, bounding_ps_at_q_worked := Bounding_ps(g, q, E : infinitely_many_to_eliminate := inf_many_to_eliminate, uneliminated_ps := unelim_ps, initially_eliminated_ps := init_eliminated_ps);
                 end if;
                 if ((unelim_ps eq previous_unelim_ps) or not bounding_ps_at_q_worked) and (not inf_many_to_eliminate) then 
                     number_useless_q := number_useless_q + 1;
@@ -220,4 +264,4 @@ function Eliminate_g(g, signature, r, A, B, C : tw_coprime_to_r := 1, val_tw_abo
             return unelim_ps, eliminated_g, first_q_to_work;
         end if;
     end if;
-end function;
+end intrinsic;
